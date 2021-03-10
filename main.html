@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="header.css" />
+    <!-- <script src="https://kit.fontawesome.com/a49678ef1e.js" crossorigin="anonymous"></script> -->
+
     <title>WIND</title>
   </head>
   <body>
     <div class="img-container">
       <div class="container">
-        <section class="header">
-          <h1>Wind</h1>
+        <div class="header">
+          <div class="brand-name">
+            <h1>Wind</h1>
+          </div>
 
-          <nav>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#howitworks">How it works</a></li>
-              <li><a href="#why-wind">Why wind</a></li>
-              <li><a href="#micromobility">Micromobility</a></li>
-              <li><a href="Pricing.html">Pricing</a></li>
-            </ul>
-          </nav>
-        </section>
+          <div id="myLinks" class="navbar">
+            <nav>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#howitworks">How it works</a></li>
+                <li><a href="#why-wind">Why wind</a></li>
+                <li><a href="#micromobility">Micromobility</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
         <section class="title">
           <div>
@@ -34,7 +41,9 @@
               service to your door!
             </p>
           </div>
-          <button>Join now!</button>
+          <div class="btn">
+            <button>Join now</button>
+          </div>
         </section>
       </div>
     </div>
@@ -42,10 +51,10 @@
     <!-- about section -->
     <div class="container">
       <section class="about">
+        <a name="about"></a>
+        <h1>About <span>wind</span></h1>
         <div class="split">
           <div>
-            <a></a>
-            <h1>About <span>wind</span></h1>
             <p>
               The first electric scooter we created in Azerbaijan has been
               operating since September 5, 2020. Our goal is to create a more
@@ -64,7 +73,7 @@
           <div class="scotter-img">
             <img src="img/red-scooter.png" alt="" />
           </div>
-          <div>
+          <div class="text-center">
             <p>
               Enjoy a fun, cheap and environmentally friendly ride with electric
               vehicles.
@@ -86,26 +95,30 @@
     <!-- why wind section -->
     <div class="wind-container">
       <div class="container">
+        <a name="why-wind"></a>
         <h1>Why wind?</h1>
         <section>
           <div class="split-icons">
-            <div class="image">
-              <img src="img/timer.svg" alt="" />
+            <div class="icon">
+              <img src="img/save-time.svg" alt="" />
             </div>
             <div>
-              <h3>Save time</h3>
+              <p class="text-centered">Save time</p>
               <p>
                 On average, our users cut out 50% of their commute time using a
                 scooter compared to other models of transport (bus, car, etc.)
               </p>
             </div>
           </div>
+        </section>
+
+        <section>
           <div class="split-icons">
-            <div class="image">
+            <div class="icon">
               <img src="img/save-money.svg" alt="" />
             </div>
             <div>
-              <h3>Save money</h3>
+              <p class="text-centered">Save money</p>
               <p>
                 WIND electric scooters are cheaper than your monthly fare for
                 public transportation. Did you know, you can take your WIND on
@@ -113,12 +126,15 @@
               </p>
             </div>
           </div>
+        </section>
+
+        <section>
           <div class="split-icons">
-            <div class="image">
+            <div class="icon">
               <img src="img/save-earth.svg" alt="" />
             </div>
             <div>
-              <h3>Save the earth</h3>
+              <p class="text-centered">Save earth</p>
               <p>
                 WIND scooters are 100% electric and a greener alternative to
                 cars, motorbikes or buses!
@@ -128,5 +144,183 @@
         </section>
       </div>
     </div>
+
+    <!-- micromobility section -->
+    <div class="container">
+      <section class="about micromobility">
+        <a name="micromobility"></a>
+        <h1>Why Micromobility?</h1>
+
+        <div class="split">
+          <div class="text-center">
+            <p>
+              About 40% of all car trips around the world are for distances of
+              less than 5 km. On average, only 2% of the fuel spent on car
+              journey is used to trasport passengers. However, the scooters are
+              both eco-friendly and fun!
+            </p>
+          </div>
+          <div class="img-scooter">
+            <img src="img/blk-scooter.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- howitworks section -->
+    <div class="wind-container">
+      <div class="container">
+        <a name="howitworks"></a>
+        <h1>How it works?</h1>
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/download.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">Free download</p>
+              <p class="cntr">Sign up in seconds.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/placeholder.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">Find an available WIND</p>
+              <p class="cntr">
+                There are dozens of WIND on the map waiting for you.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/unlock.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">Unlock And Act</p>
+              <p class="cntr">Release WIND and enjoy electric freedom.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/parking.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">Parking</p>
+              <p class="cntr">
+                Park the WIND in a way that does not disturb other people, and
+                your jorney.
+              </p>
+            </div>
+          </div>
+        </section>
+        <button class="subscribe">Join now</button>
+      </div>
+    </div>
+
+    <!-- price section -->
+
+    <div class="container">
+      <section class="pricing-section">
+        <a name="pricing"></a>
+        <h1>Pricing</h1>
+        <div>
+          <a href="" class="btn-transparent">Starting the journey EUR 4</a>
+          <a href="join.html" class="btn-black">EUR 2 per minute</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- why rent section -->
+    <div class="wind-container whyrent">
+      <div class="container">
+        <h1>Why rent and not buy scooter?</h1>
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/security.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">Quality is maintained</p>
+              <p>
+                We always maintain the quality of the scooter and fix everything
+                to ensure your WIND will never let you down!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/visibility.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">No hidden costs</p>
+              <p>
+                Repairing a flat tire typically costs between 25 and 40 euro.
+                With WIND all repairs are free.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="split-icons">
+            <div class="icon">
+              <img src="img/low-price.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-centered">Low commitment costs</p>
+              <p>
+                No long term commitment if you don't want to. No large upfront
+                investment. Collect experiences, not stuff.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-nav">
+          <div class="box1">
+            <p><a href="about"></a>About</p>
+            <p><a href="#"></a>Why WIND</p>
+            <p><a href="#"></a>How It Works</p>
+            <p><a href="#"></a>Micromobility</p>
+            <p><a href="#"></a>Pricing</p>
+          </div>
+
+          <div class="box1">
+            <p><a href="#"></a>How to use</p>
+            <p><a href="#"></a>Features</p>
+            <p><a href="#"></a>Rent</p>
+          </div>
+
+          <div class="box2">
+            <h4>Corparate Headquater</h4>
+            <p>Baku</p>
+            <p>101 Street</p>
+            <p>Tel: 020-810 02 03</p>
+            <p>info@wind-rent-baku.az</p>
+            <p>K.v.K. 60504579</p>
+            <p>BTW: NL 853939822801</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

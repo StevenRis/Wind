@@ -21,11 +21,6 @@ p {
   margin: 0;
 }
 
-.container h1,
-p {
-  /* color: white; */
-}
-
 .container {
   margin: 0 auto;
   width: min(90%, 70rem);
@@ -39,17 +34,11 @@ p {
   margin: 0;
   padding: 0;
   background-image: url(img/scooter.jpg);
-  /* height: 600px; */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* .header {
-  display: flex;
-  justify-content: space-between;
-} */
 
 nav ul {
   text-transform: uppercase;
@@ -57,11 +46,6 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
-/* nav li {
-  display: inline-block;
-  padding-left: 15px;
-} */
 
 nav a {
   color: white;
@@ -72,20 +56,40 @@ nav a:hover {
   color: #adadadce;
 }
 
+.footer-nav {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.footer-nav p {
+  padding: 0;
+}
+
+.box1 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box2 h4 {
+  color: black;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .title {
   margin-top: 5rem;
 }
 
 .title p {
   padding-top: 1rem;
+  color: white;
 }
 
 /*about section*/
-.container {
-  margin: 0 auto;
-  width: min(90%, 70rem);
-}
-
 .about h1,
 p {
   color: black;
@@ -101,12 +105,18 @@ p {
   .split {
     flex-direction: row;
   }
+
+  .footer-nav {
+    flex-direction: row;
+  }
 }
 
 .scotter-img {
   display: block;
+  margin: 0 auto;
   max-width: 100%;
   background-repeat: no-repeat;
+  padding: 1.5rem 0;
 }
 
 .about h1 {
@@ -114,34 +124,98 @@ p {
   text-align: center;
 }
 
+@media (min-width: 750px) {
+  .text-center p {
+    padding: 6rem 0;
+  }
+}
+
 /*why wind section*/
-.wind-container {
+.wind-container,
+footer {
   background-color: rgb(232, 246, 255);
+}
+
+.whyrent {
+  background-color: white;
 }
 
 .wind-container h1 {
   color: black;
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 0;
+  font-size: 24px;
 }
 
-.wind-container h3 {
-  text-align: center;
-  padding: 1rem 0;
+.text-centered {
   color: black;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-weight: bold;
+}
+
+.cntr {
+  text-align: center;
 }
 
 .wind-container img {
-  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
 }
 
-.image {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-/* .split-icons img {
+.split-icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
+  flex-direction: column;
+}
+
+.icon {
+  display: block;
+  padding: 0 10px;
+}
+
+@media (min-width: 750px) {
+  .split-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-centered {
+    text-align: center;
+  }
+
+  .wind-container section {
+    max-width: 33%;
+    display: inline-block;
+    padding: 0 2rem;
+  }
+}
+
+.micromobility h1 {
+  color: black;
+  margin-top: 2rem;
+}
+
+.img-scooter img {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  color: white;
+  background-color: #1762a7;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+button:hover {
+  background-color: #2180d8;
+}

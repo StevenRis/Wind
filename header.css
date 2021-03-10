@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .header {
+  overflow: hidden;
+  position: relative;
+}
+
+.header #myLinks {
+  display: none;
+}
+
+.header a {
+  float: left;
+  color: red;
+}
+
+.header a.icon {
+  float: right;
+} */
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 750px) {
+  .btn {
+    justify-content: left;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar li {
+    padding-left: 1rem;
+  }
+}
