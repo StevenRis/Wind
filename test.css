@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* .container-flexbox {
+  display: flex;
+  flex-direction: column;
+} */
+
+@media (min-width: 700px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
