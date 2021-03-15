@@ -60,6 +60,10 @@ p {
   text-transform: uppercase;
 }
 
+.box1 a {
+  text-decoration: none;
+}
+
 .box2 h4 {
   color: black;
   margin: 0;
@@ -216,4 +220,70 @@ button:hover {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+}
+
+.price-container {
+  background-color: lightgrey;
+}
+
+.price-btn {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 750px) {
+  .price-btn {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+.pricing-section h1 {
+  color: black;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 24px;
+}
+
+.price-btn a {
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-transparent {
+  color: black;
+  padding: 1rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  max-width: 20rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.btn-transparent:hover {
+  background-color: rgb(214, 223, 228);
+  color: black;
+}
+
+.btn-black {
+  color: black;
+  padding: 1rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  max-width: 20rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.btn-black:hover {
+  background-color: rgb(214, 223, 228);
+  color: black;
 }
